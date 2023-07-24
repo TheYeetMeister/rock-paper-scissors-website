@@ -3,14 +3,20 @@ function getComputerChoice() {
 
     switch(choice) {
         case 0:
-            return "rock";
+            return "Rock";
         case 1:
-            return "paper";
+            return "Paper";
         case 2:
-            return "scissors";
+            return "Scissors";
     }
 }
 
 function playRound(playerSelection, computerSelection) {
-    playerSelection = playerSelection.toLowerCase();
+    playerSelection = playerSelection[0].toUpperCase() + playerSelection.substring(1).toLowerCase();
+
+    return playerSelection;
+
+    if (playerSelection == computerSelection) {
+        return "Tie! You both chose " + computerSelection;
+    }
 }
