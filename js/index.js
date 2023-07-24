@@ -31,6 +31,6 @@ function playRound(playerSelection, computerSelection) {
 
 function game() {
     for (let i = 0; i < 5; ++i) {
-
+        let outcome = playRound(prompt(), getComputerChoice());
     }
 }
