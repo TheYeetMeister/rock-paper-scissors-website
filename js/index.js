@@ -14,9 +14,17 @@ function getComputerChoice() {
 function playRound(playerSelection, computerSelection) {
     playerSelection = playerSelection[0].toUpperCase() + playerSelection.substring(1).toLowerCase();
 
-    return playerSelection;
-
     if (playerSelection == computerSelection) {
-        return "Tie! You both chose " + computerSelection;
+        return "Tie! You both chose " + computerSelection + "!";
+
+    } else if ((playerSelection == "Rock" && 
+                computerSelection == "Scissors") ||
+                (playerSelection == "Scissors" &&
+                computerSelection == "Paper") ||
+                (playerSelection == "Paper" &&
+                computerSelection == "Rock")) {
+                    return "You win! " + playerSelection + " beats " + computerSelection + "!";
+    } else {
+        return "You lose! " + computerSelection + " beats " + playerSelection + "!";
     }
 }
