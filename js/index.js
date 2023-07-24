@@ -1,5 +1,5 @@
 function getComputerChoice() {
-    var choice = parseInt(Math.random() * 3);
+    let choice = parseInt(Math.random() * 3);
 
     switch(choice) {
         case 0:
@@ -30,5 +30,7 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function game() {
-    
+    for (let i = 0; i < 5; ++i) {
+
+    }
 }
