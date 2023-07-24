@@ -11,6 +11,8 @@ function getComputerChoice() {
     }
 }
 
-function playRound(playerSelection) {
-    
+function playRound(choice) {
+    var playerSelection = choice.toLowerCase();
+
+    return playerSelection;
 }
