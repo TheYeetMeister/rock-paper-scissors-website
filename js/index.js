@@ -30,7 +30,15 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function game() {
+    let playerPoints = 0;
+    let computerPoints = 0;
     for (let i = 0; i < 5; ++i) {
         let outcome = playRound(prompt(), getComputerChoice());
+
+        if (outcome.includes("win")) {
+            ++playerPoints;
+        } else if (outcome.includes("lose")) {
+            ++computerPoints;
+        }
     }
 }
