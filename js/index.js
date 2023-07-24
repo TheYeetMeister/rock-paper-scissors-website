@@ -3,16 +3,14 @@ function getComputerChoice() {
 
     switch(choice) {
         case 0:
-            return "Rock";
+            return "rock";
         case 1:
-            return "Paper";
+            return "paper";
         case 2:
-            return "Scissors";
+            return "scissors";
     }
 }
 
 function playRound(playerSelection, computerSelection) {
     playerSelection = playerSelection.toLowerCase();
-
-    return playerSelection;
 }
