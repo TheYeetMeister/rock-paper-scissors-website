@@ -40,5 +40,15 @@ function game() {
         } else if (outcome.includes("lose")) {
             ++computerPoints;
         }
+
+        console.log(outcome);
+    }
+
+    if (playerPoints == computerPoints) {
+        console.log("It's a tie! " + playerPoints + " to " + computerPoints);
+    } else if (playerPoints > computerPoints) {
+        console.log("The player wins! " + playerPoints + " to " + computerPoints);
+    } else {
+        console.log("The player loses! " + playerPoints + " to " + computerPoints);
     }
 }
