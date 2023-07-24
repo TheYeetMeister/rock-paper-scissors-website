@@ -10,3 +10,7 @@ function getComputerChoice() {
             return "Scissors";
     }
 }
+
+function playRound(playerSelection) {
+    
+}
