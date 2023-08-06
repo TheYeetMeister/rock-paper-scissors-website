@@ -33,6 +33,9 @@ function game() {
     let playerPoints = 0;
     let computerPoints = 0;
 
+    const moveBtns = ducment.querySelectorAll('button');
+
+    
     let outcome = playRound(prompt(), getComputerChoice());
 
     if (outcome.includes("win")) {
