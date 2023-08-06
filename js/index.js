@@ -35,9 +35,9 @@ function game() {
 
     const moveBtns = document.querySelectorAll('button');
 
-    buttons.forEach((button) => {
+    moveBtns.forEach((button) => {
         button.addEventListener('click', (e) => {
-            console.log(e);
+            console.log(e.target.classList);
         });
     });
     
