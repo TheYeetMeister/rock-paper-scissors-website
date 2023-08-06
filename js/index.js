@@ -33,7 +33,7 @@ function game() {
     let playerPoints = 0;
     let computerPoints = 0;
 
-    const moveBtns = ducment.querySelectorAll('button');
+    const moveBtns = document.querySelectorAll('button');
 
     buttons.forEach((button) => {
         button.addEventListener('click', (e) => {
