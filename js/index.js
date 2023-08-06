@@ -53,3 +53,5 @@ function game() {
 }
 
 const playPen = document.querySelector('.playPen');
+
+const rockBtn = document.createElement('button');
