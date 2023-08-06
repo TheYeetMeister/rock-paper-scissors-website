@@ -51,3 +51,5 @@ function game() {
         console.log("The player loses! " + playerPoints + " to " + computerPoints);
     }
 }
+
+const playPen = document.querySelector('.playPen');
