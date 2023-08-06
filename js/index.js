@@ -35,6 +35,11 @@ function game() {
 
     const moveBtns = ducment.querySelectorAll('button');
 
+    buttons.forEach((button) => {
+        button.addEventListener('click', (e) => {
+            console.log(e);
+        });
+    });
     
     let outcome = playRound(prompt(), getComputerChoice());
 
