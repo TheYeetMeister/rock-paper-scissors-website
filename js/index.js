@@ -55,13 +55,13 @@ function game() {
 const playPen = document.querySelector('.playPen');
 
 const rockBtn = document.createElement('button');
-rockBtn.classList.add('rockBtn');
+rockBtn.classList.add('rock');
 
 const paperBtn = document.createElement('button');
-paperBtn.classList.add('paperBtn');
+paperBtn.classList.add('paper');
 
 const scissorsBtn = document.createElement('button');
-scissorsBtn.classList.add('scissorsBtn');
+scissorsBtn.classList.add('scissors');
 
 playPen.appendChild(rockBtn);
 playPen.appendChild(paperBtn);
