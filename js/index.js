@@ -63,3 +63,6 @@ paperBtn.classList.add('paperBtn');
 const scissorsBtn = document.createElement('button');
 scissorsBtn.classList.add('scissorsBtn');
 
+playPen.appendChild(rockBtn);
+playPen.appendChild(paperBtn);
+playPen.appendChild(scissorsBtn);
