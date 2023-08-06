@@ -55,3 +55,11 @@ function game() {
 const playPen = document.querySelector('.playPen');
 
 const rockBtn = document.createElement('button');
+rockBtn.classList.add('rockBtn');
+
+const paperBtn = document.createElement('button');
+paperBtn.classList.add('paperBtn');
+
+const scissorsBtn = document.createElement('button');
+scissorsBtn.classList.add('scissorsBtn');
+
