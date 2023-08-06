@@ -74,3 +74,5 @@ scissorsBtn.classList.add('scissors');
 playPen.appendChild(rockBtn);
 playPen.appendChild(paperBtn);
 playPen.appendChild(scissorsBtn);
+
+game(); //starts the game
