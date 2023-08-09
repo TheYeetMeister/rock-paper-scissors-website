@@ -28,36 +28,53 @@ function playRound(playerSelection, computerSelection) {
         return "You lose! " + computerSelection + " beats " + playerSelection + "!";
     }
 }
-
+            
 function game() {
+    const amountOfRounds = 5
+
     let playerPoints = 0;
     let computerPoints = 0;
 
     const moveBtns = document.querySelectorAll('button');
 
+    let outcome;
+
+    let count = 1;
+
+    function displayWinLoseText() {
+        if (playerPoints == computerPoints) {
+            console.log("It's a tie! " + playerPoints + " to " + computerPoints);
+        } else if (playerPoints > computerPoints) {
+            console.log("The player wins! " + playerPoints + " to " + computerPoints);
+        } else {
+            console.log("The player loses! " + playerPoints + " to " + computerPoints);
+        }
+    }
+
+    function playRounds(e) {
+        if (count <= amountOfRounds) {
+            outcome = playRound(e.target.classList.value, getComputerChoice());
+
+            
+            if (outcome.includes("win")) {
+                ++playerPoints;
+            } else if (outcome.includes("lose")) {
+                ++computerPoints;
+            }
+
+            console.log(outcome);
+
+            if (count >= amountOfRounds) {
+                displayWinLoseText();
+            }
+
+            ++count;
+        }
+    }
+
     moveBtns.forEach((button) => {
-        button.addEventListener('click', (e) => {
-            console.log(e.target.classList);
-        });
+        button.addEventListener('click', playRounds);
     });
-    
-    let outcome = playRound(prompt(), getComputerChoice());
-
-    if (outcome.includes("win")) {
-        ++playerPoints;
-    } else if (outcome.includes("lose")) {
-        ++computerPoints;
-    }
-
-    console.log(outcome);
-
-    if (playerPoints == computerPoints) {
-        console.log("It's a tie! " + playerPoints + " to " + computerPoints);
-    } else if (playerPoints > computerPoints) {
-        console.log("The player wins! " + playerPoints + " to " + computerPoints);
-    } else {
-        console.log("The player loses! " + playerPoints + " to " + computerPoints);
-    }
 }
 
 const playPen = document.querySelector('.playPen');
