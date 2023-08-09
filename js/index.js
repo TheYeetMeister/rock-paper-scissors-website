@@ -93,6 +93,8 @@ const playPen = document.querySelector('.playPen');
 const gameOutcome = document.querySelector('.gameBoard > .gameOutcome');
 const roundOutcome = document.querySelector('.gameBoard > .roundOutcome');
 
+roundOutcome.style.paddingBottom = "20px";
+
 const rockBtn = document.createElement('button');
 rockBtn.classList.add('rock');
 rockBtn.innerText = "ROCK";
