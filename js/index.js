@@ -81,12 +81,15 @@ const playPen = document.querySelector('.playPen');
 
 const rockBtn = document.createElement('button');
 rockBtn.classList.add('rock');
+rockBtn.innerText = "ROCK";
 
 const paperBtn = document.createElement('button');
 paperBtn.classList.add('paper');
+paperBtn.innerText = "PAPER";
 
 const scissorsBtn = document.createElement('button');
 scissorsBtn.classList.add('scissors');
+scissorsBtn.innerText = "SCISSORS";
 
 playPen.appendChild(rockBtn);
 playPen.appendChild(paperBtn);
