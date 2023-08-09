@@ -71,11 +71,12 @@ function game() {
                 ++computerPoints;
             }
 
-            console.log(outcome);
+            //displays the outcome of each round
+            scoreBoard.innerText = outcome;
 
             if (count >= amountOfRounds) {
 
-                //displays the gameEvent text
+                //displays the winning/losing text
                 scoreBoard.innerText = displayWinLoseText();
             }
 
