@@ -78,6 +78,7 @@ function game() {
 }
 
 const playPen = document.querySelector('.playPen');
+const scoreBoard = document.querySelector('.gameBoard > .scoreBoard')
 
 const rockBtn = document.createElement('button');
 rockBtn.classList.add('rock');
