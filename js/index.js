@@ -56,13 +56,9 @@ function game() {
 
     const moveBtns = document.querySelectorAll('button');
 
-    let outcome;
-
-    let count = 1;
-
     function playRounds(e) {
-        if (count <= amountOfRounds) {
-            outcome = playRound(e.target.classList.value, getComputerChoice());
+        if (playerPoints < 5 && computerPoints < 5) {
+            let outcome = playRound(e.target.classList.value, getComputerChoice());
 
             
             if (outcome.includes("win")) {
@@ -74,13 +70,11 @@ function game() {
             //displays the outcome of each round
             roundOutcome.innerText += outcome + '\n';
 
-            if (count >= amountOfRounds) {
+            if (playerPoints >= 5 || computerPoints >= 5) {
 
                 //displays the winning/losing text
                 gameOutcome.innerText = displayWinLoseText(playerPoints, computerPoints);
             }
-
-            ++count;
         }
     }
 
