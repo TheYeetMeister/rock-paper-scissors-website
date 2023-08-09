@@ -77,7 +77,7 @@ function game() {
             if (count >= amountOfRounds) {
 
                 //displays the winning/losing text
-                gameOutcome.innerText = displayWinLoseText();
+                gameOutcome.innerText = displayWinLoseText(playerPoints, computerPoints);
             }
 
             ++count;
