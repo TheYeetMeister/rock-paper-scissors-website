@@ -90,7 +90,7 @@ function game() {
 }
 
 const playPen = document.querySelector('.playPen');
-const gameOutcome = document.querySelector('.gameBoard > .scoreOutcome');
+const gameOutcome = document.querySelector('.gameBoard > .gameOutcome');
 const roundOutcome = document.querySelector('.gameBoard > .roundOutcome');
 
 const rockBtn = document.createElement('button');
