@@ -72,12 +72,12 @@ function game() {
             }
 
             //displays the outcome of each round
-            scoreBoard.innerText = outcome;
+            roundOutcome.innerText = outcome;
 
             if (count >= amountOfRounds) {
 
                 //displays the winning/losing text
-                scoreBoard.innerText = displayWinLoseText();
+                gameOutcome.innerText = displayWinLoseText();
             }
 
             ++count;
@@ -90,7 +90,8 @@ function game() {
 }
 
 const playPen = document.querySelector('.playPen');
-const scoreBoard = document.querySelector('.gameBoard > .scoreBoard')
+const gameOutcome = document.querySelector('.gameBoard > .scoreOutcome');
+const roundOutcome = document.querySelector('.gameBoard > .roundOutcome');
 
 const rockBtn = document.createElement('button');
 rockBtn.classList.add('rock');
