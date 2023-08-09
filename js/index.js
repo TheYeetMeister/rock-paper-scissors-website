@@ -76,7 +76,7 @@ function game() {
             if (count >= amountOfRounds) {
 
                 //displays the gameEvent text
-                displayWinLoseText();
+                scoreBoard.innerText = displayWinLoseText();
             }
 
             ++count;
