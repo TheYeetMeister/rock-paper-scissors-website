@@ -46,14 +46,17 @@ function game() {
             return ("It's a tie! " + 
                     playerPoints + " to " + 
                     computerPoints);
+
         } else if (playerPoints > computerPoints) {
             return ("The player wins! " + 
                     playerPoints + " to " +
                     computerPoints);
+
         } else {
             return ("The player loses! " + 
                     playerPoints + " to " + 
                     computerPoints);
+
         }
     }
 
@@ -71,6 +74,8 @@ function game() {
             console.log(outcome);
 
             if (count >= amountOfRounds) {
+
+                //displays the gameEvent text
                 displayWinLoseText();
             }
 
