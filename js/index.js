@@ -43,11 +43,11 @@ function game() {
 
     function displayWinLoseText() {
         if (playerPoints == computerPoints) {
-            console.log("It's a tie! " + playerPoints + " to " + computerPoints);
+            return "It's a tie! " + playerPoints + " to " + computerPoints;
         } else if (playerPoints > computerPoints) {
-            console.log("The player wins! " + playerPoints + " to " + computerPoints);
+            return "The player wins! " + playerPoints + " to " + computerPoints;
         } else {
-            console.log("The player loses! " + playerPoints + " to " + computerPoints);
+            return "The player loses! " + playerPoints + " to " + computerPoints;
         }
     }
 
