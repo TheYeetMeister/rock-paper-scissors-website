@@ -72,7 +72,7 @@ function game() {
             }
 
             //displays the outcome of each round
-            roundOutcome.innerText = outcome;
+            roundOutcome.innerText += outcome + '\n';
 
             if (count >= amountOfRounds) {
 
