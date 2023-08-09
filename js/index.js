@@ -28,7 +28,26 @@ function playRound(playerSelection, computerSelection) {
         return "You lose! " + computerSelection + " beats " + playerSelection + "!";
     }
 }
-            
+         
+function displayWinLoseText(playerPoints, computerPoints) {
+    if (playerPoints == computerPoints) {
+        return ("It's a tie! " + 
+                playerPoints + " to " + 
+                computerPoints);
+
+    } else if (playerPoints > computerPoints) {
+        return ("The player wins! " + 
+                playerPoints + " to " +
+                computerPoints);
+
+    } else {
+        return ("The player loses! " + 
+                playerPoints + " to " + 
+                computerPoints);
+
+    }
+}
+
 function game() {
     const amountOfRounds = 5
 
@@ -40,25 +59,6 @@ function game() {
     let outcome;
 
     let count = 1;
-
-    function displayWinLoseText() {
-        if (playerPoints == computerPoints) {
-            return ("It's a tie! " + 
-                    playerPoints + " to " + 
-                    computerPoints);
-
-        } else if (playerPoints > computerPoints) {
-            return ("The player wins! " + 
-                    playerPoints + " to " +
-                    computerPoints);
-
-        } else {
-            return ("The player loses! " + 
-                    playerPoints + " to " + 
-                    computerPoints);
-
-        }
-    }
 
     function playRounds(e) {
         if (count <= amountOfRounds) {
