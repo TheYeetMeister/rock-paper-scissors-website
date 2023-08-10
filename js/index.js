@@ -97,6 +97,9 @@ roundOutcome.style.paddingBottom = "20px";
 roundOutcome.style.display = "flex";
 roundOutcome.style.textAlign = "center";
 
+playPen.style.display = "flex";
+playPen.style.gap = "33px";
+
 const rockBtn = document.createElement('button');
 rockBtn.classList.add('rock');
 rockBtn.innerText = "ROCK";
