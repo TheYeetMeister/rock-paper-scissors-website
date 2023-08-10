@@ -86,6 +86,10 @@ function game() {
 const playPen = document.querySelector('.playPen');
 const gameOutcome = document.querySelector('.gameBoard > .gameOutcome');
 const roundOutcome = document.querySelector('.gameBoard > .roundOutcome');
+const gameBoard = document.querySelector('.gameBoard');
+
+gameBoard.style.display = "flex";
+gameBoard.style.justifyContent = "center";
 
 roundOutcome.style.paddingBottom = "20px";
 
