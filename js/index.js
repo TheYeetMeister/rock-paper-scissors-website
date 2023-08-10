@@ -94,6 +94,8 @@ gameBoard.style.alignItems = "center";
 gameBoard.style.justifyContent = "center";
 
 roundOutcome.style.paddingBottom = "20px";
+roundOutcome.style.display = "flex";
+roundOutcome.style.textAlign = "center";
 
 const rockBtn = document.createElement('button');
 rockBtn.classList.add('rock');
