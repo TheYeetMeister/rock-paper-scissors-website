@@ -89,6 +89,8 @@ const roundOutcome = document.querySelector('.gameBoard > .roundOutcome');
 const gameBoard = document.querySelector('.gameBoard');
 
 gameBoard.style.display = "flex";
+gameBoard.style.flexDirection = "column";
+gameBoard.style.alignItems = "center";
 gameBoard.style.justifyContent = "center";
 
 roundOutcome.style.paddingBottom = "20px";
